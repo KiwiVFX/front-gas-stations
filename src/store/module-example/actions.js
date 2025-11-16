@@ -6,7 +6,7 @@ export function initAllGasStations({ commit }) {
       // .get(
       //   'https://api.tel-aviv.gov.il/gis/Layer?layerCode=548'
       // )
-      .get("https://gas-stations-api.herokuapp.com/")
+      .get("https://gas-stations-back.onrender.com/")
       .then((res) => {
         commit("ALL_GAS_STATIONS", res.data);
       });
